@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd" >
+<struts>
+	<constant name="struts.devMode" value="true"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+	<constant name="struts.i18n.reload" value="true"></constant>
+	<constant name="struts.multipart.maxSize" value="104857600"></constant>
+
+	<package name="newsCrud" extends="struts-default" namespace="/newsCrud">
+		<action name="*" class="com.pcms.seacucumber.controller.news.NewsCrudControl"
+			method="{1}">
+			<result name="toInitPage">/jsp/adminConsole/news/newsMain.jsp</result>
+			<result name="toAddOrModPage">/jsp/adminConsole/news/newsAddOrMod.jsp</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN" "http://struts.apache.org/dtds/struts-2.3.dtd" >
+<struts>
+   <constant name="struts.devMode" value="true"></constant>
+   <constant name="struts.enable.DynamicMethodInvocation" value="true"></constant>
+   <constant name="struts.i18n.reload" value="true"></constant>
+   <constant name="struts.multipart.maxSize" value="1073741824"></constant>
+   
+   <!-- 首页 -->
+   <include file="com/pcms/seacucumber/controller/home/homeStruts.xml"></include>
+   <!-- 新闻Show -->
+   <include file="com/pcms/seacucumber/controller/news/newsShowStruts.xml"></include>
+   <!-- 新闻管理 -->
+   <include file="com/pcms/seacucumber/controller/news/newsCrudStruts.xml"></include>
+</struts>
