@@ -25,7 +25,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   
   <body>
     <a href="newsCrud/initAdd.action">新增</a> 
-    <a href="/home/initMain.action">首页</a> 
-    <a href="/jsp/adminConsole/consoleHome/MyJsp.jsp">MyConsole</a>
+    <a href="home/initMain.action">首页</a> 
+    <a href="jsp/adminConsole/consoleHome/MyJsp.jsp">MyConsole</a>
   </body>
 </html>

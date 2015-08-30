@@ -8,6 +8,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     
 <html>
 <head>
+    <base href="<%=basePath%>">
 <title>Console Panel</title>
 
     <!-- GC -->
@@ -26,9 +27,11 @@ p {
     background-image:url(../shared/icons/fam/information.png);
 }
 </style>
-<!-- <script type="text/javascript" src="../../examples/shared/include-ext.js"></script>
-<script type="text/javascript" src="../../examples/shared/options-toolbar.js"></script> -->
-<script type="text/javascript" src="../../js/ext-all.js"></script>
+<!-- <script type="text/javascript" src="../examples/shared/include-ext.js"></script>
+<script type="text/javascript" src="../examples/shared/options-toolbar.js"></script> -->
+
+<link rel="stylesheet" href="js/ext/resources/css/ext-all.css">
+<script type="text/javascript" src="js/ext-all-debug-w-comments.js"></script>
 <script type="text/javascript">
     Ext.require(['*']);
 
